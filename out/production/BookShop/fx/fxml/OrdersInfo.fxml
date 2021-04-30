@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="650.0" prefWidth="650.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="fx.controllers.OrdersInfoScreenController">
+    <children>
+        <ImageView fitHeight="722.0" fitWidth="650.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../media/OrdersInfo.png"/>
+            </image>
+        </ImageView>
+        <Button layoutX="511.0" layoutY="570.0" mnemonicParsing="false" onAction="#onBackButtonClick" opacity="0.0"
+                prefHeight="64.0" prefWidth="128.0" text="Back"/>
+        <TableView fx:id="tableViewOrders" layoutX="223.0" layoutY="325.0" prefHeight="307.0" prefWidth="203.0"
+                   style="-fx-background-color: fff9d8;">
+            <columns>
+                <TableColumn fx:id="columnBookTitle" prefWidth="75.0" text="Book title"/>
+                <TableColumn fx:id="columnClientName" prefWidth="71.19999999999999" text="Client name"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

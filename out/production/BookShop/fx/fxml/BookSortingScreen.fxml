@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="566.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.BookSortingScreenController">
+   <children>
+      <ImageView fitHeight="651.0" fitWidth="975.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../media/BookSortingScreen.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="textFieldSearching" layoutX="37.0" layoutY="379.0" prefHeight="51.0" prefWidth="378.0">
+         <font>
+            <Font name="French Script MT" size="25.0" />
+         </font></TextField>
+     
+      <Button layoutY="610.0" mnemonicParsing="false" opacity="0.0" prefHeight="50.0" prefWidth="263.0" text="Delete" />
+      <TableView fx:id="tableViewBooks" layoutX="574.0" layoutY="273.0" prefHeight="364.0" prefWidth="377.0" style="-fx-background-color: fff9d8;">
+        <columns>
+          <TableColumn fx:id="columnTitle" prefWidth="75.0" text="Title" />
+          <TableColumn fx:id="columnAuthor" prefWidth="75.0" text="Author" />
+            <TableColumn fx:id="columnGenre" prefWidth="75.0" text="Genre" />
+            <TableColumn fx:id="columnPrice" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="columnAmount" prefWidth="75.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Button layoutX="334.0" layoutY="457.0" mnemonicParsing="false" onAction="#onButtonBuyClick" opacity="0.0" prefHeight="62.0" prefWidth="98.0" text="Buy" />
+      <Button layoutY="586.0" mnemonicParsing="false" onAction="#onButtonDeleteClick" opacity="0.0" prefHeight="62.0" prefWidth="314.0" text="delete" />
+   </children>
+</AnchorPane>
